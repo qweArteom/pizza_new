@@ -1,0 +1,13 @@
+
+{% extends "_base.html" %}
+
+{% block body %}
+
+    <button>
+        <a href="{{ url_for('students')}}">Students</a>
+    </button>
+    <button>
+        <a href="{{url_for('add_student')}}">Add student</a>
+    </button>
+
+{% endblock body %}

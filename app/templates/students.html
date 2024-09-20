@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+
+{% block body %}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+        <th>Grade</th>
+    </tr>
+    {% for student in students %}
+        <tr>
+            {% for data in student %}
+                <td>{{ data }}</td>
+            {% endfor %}
+
+        </tr>
+    {% endfor %}
+</table>
+{% endblock body %}
